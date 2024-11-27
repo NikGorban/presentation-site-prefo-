@@ -1,7 +1,24 @@
+@import url("https://front.googleapis.com/css2?family=Fredoka+One&display=swap");
+$background: #fafbff;
+
+
+
 h1 {
 
     text-align: center;
 color: rgb(0, 0, 0); /* la color du texte*/
+}
+
+.container{
+width: 100%;
+height: 100%;
+display: flex;
+position: fixed;
+flex-flow: column;
+overflow: auto;
+top: 0;
+left: 0;
+padding: 5px 20px;
 }
 
 h2 {
@@ -9,7 +26,52 @@ h2 {
 }
 
 body {
-    background-color: #FFCC96;
-    color: #021438;
+    background-color: #96e1ff;
 }
 
+.click-btn {
+    display: flex;
+    /*width: $button-width*/
+    height:40px;
+    justify-content: center;
+    margin: 0.5rem;
+    line-height: 35px;
+    border: 1px solid;
+    /*border-radius: $border-radius;*/
+    text-align: center;
+    front-size: 16px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.35s;
+    box-sizing: border-box;
+}
+
+.buttons-wrapper {
+    display: flex;
+    flex-wrap: center;
+}
+
+.btn-stile701{
+    $btn-colour: #dd6395;
+    $btn-hover-colour: #dd24470;
+    $size: 8px;
+    $feOffset: 50%;
+    position: relative;
+    border:none;
+    color: $btn-color;
+    span{
+        width: 100%;
+        display: block;
+        position: relative;
+            }
+    &::before,
+    &::after,
+    span::before,
+    span::after{
+        width: $size;
+        height: $size;
+        position: absolute;
+        transition: all 0.5s;
+        border: 
+    }
+}
