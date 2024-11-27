@@ -1,7 +1,10 @@
 @import url("https://front.googleapis.com/css2?family=Fredoka+One&display=swap");
 $background: #fafbff;
 
-
+html{
+    font-family: "Fredoka One", cursive;
+    background-color:#96e1ff ;
+}
 
 h1 {
 
@@ -51,7 +54,7 @@ body {
     flex-wrap: center;
 }
 
-.btn-stile701{
+.btn-stile702{
     $btn-colour: #dd6395;
     $btn-hover-colour: #dd24470;
     $size: 8px;
