@@ -1,156 +1,32 @@
-@import url("https://front.googleapis.com/css2?family=Fredoka+One&display=swap");
-$background: #fafbff;
-
-html{
-    font-family: "Fredoka One", cursive;
-    background-color:#96e1ff ;
-}
-
-h1 {
-
-    text-align: center;
-color: rgb(0, 0, 0); /* la color du texte*/
-}
-
-.container{
-width: 100%;
-height: 100%;
-display: flex;
-position: fixed;
-flex-flow: column;
-overflow: auto;
-top: 0;
-left: 0;
-padding: 5px 20px;
-}
-
-h2 {
-    color: rgb(65, 65, 65);
-}
-
 body {
-    background-color: #96e1ff;
+  background: #fcfcfc;
 }
-
-.click-btn {
-    display: flex;
-    /*width: $button-width*/
-    height:40px;
-    justify-content: center;
-    margin: 0.5rem;
-    line-height: 35px;
-    border: 1px solid;
-    /*border-radius: $border-radius;*/
-    text-align: center;
-    front-size: 16px;
-    color: black;
-    text-decoration: none;
-    transition: all 0.35s;
-    box-sizing: border-box;
+.button {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 20px;
+  padding: 10px 30px;
+  position: relative;
+  border: 2px solid #473a06;
+  color: #f16d0f;
+  font-family: 'Montserrat', sans-serif;
+  transition: .4s;
 }
-
-.buttons-wrapper {
-    display: flex;
-    flex-wrap: center;
+.button:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0, 0, 0, 0);
+  transition: .4s;
 }
-
-.btn-stile702{
-    $btn-colour: #dd6395;
-    $btn-hover-colour: #dd24470;
-    $size: 8px;
-    $feOffset: 50%;
-    position: relative;
-    border:none;
-    color: $btn-color;
-    span{
-        width: 100%;
-        display: block;
-        position: relative;
-            }
-    &::before,
-    &::after,
-    span::before,
-    span::after{
-        width: $size;
-        height: $size;
-        position: absolute;
-        transition: all 0.5s;
-        border: 
-    }
+.button:hover:after {
+  border-color: #524307;
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
 }
-
-.bn5 {
-    padding: 0.6em 2em;
-    border: none;
-    outline: none;
-    color: rgb(255, 255, 255);
-    background: #111;
-    cursor: pointer;
-    position: relative;
-    z-index: 0;
-    border-radius: 10px;
-  }
-  
-  .bn5:before {
-    content: "";
-    background: linear-gradient(
-      45deg,
-      #ff0000,
-      #ff7300,
-      #fffb00,
-      #48ff00,
-      #00ffd5,
-      #002bff,
-      #7a00ff,
-      #ff00c8,
-      #ff0000
-    );
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    background-size: 400%;
-    z-index: -1;
-    filter: blur(5px);
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    animation: glowingbn5 20s linear infinite;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-    border-radius: 10px;
-  }
-  
-  @keyframes glowingbn5 {
-    0% {
-      background-position: 0 0;
-    }
-    50% {
-      background-position: 400% 0;
-    }
-    100% {
-      background-position: 0 0;
-    }
-  }
-  
-  .bn5:active {
-    color: #000;
-  }
-  
-  .bn5:active:after {
-    background: transparent;
-  }
-  
-  .bn5:hover:before {
-    opacity: 1;
-  }
-  
-  .bn5:after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #191919;
-    left: 0;
-    top: 0;
-    border-radius: 10px;
-  }
