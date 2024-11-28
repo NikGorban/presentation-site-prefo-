@@ -1,5 +1,6 @@
 body {
   background: #fcfcfc;
+  background-image: url(https://kartinki.pics/uploads/posts/2022-12/1669916337_kartinkin-net-p-tekstura-buka-instagram-17.jpg);
 }
 .button {
   text-decoration: none;
@@ -7,10 +8,10 @@ body {
   margin: 10px 20px;
   padding: 10px 30px;
   position: relative;
-  border: 2px solid #473a06;
-  color: #f16d0f;
+  border: 3px solid #473a06;
+  color: #000000;
   font-family: 'Montserrat', sans-serif;
-  transition: .4s;
+  transition: 0.4s;
 }
 .button:after {
   content: "";
@@ -22,7 +23,7 @@ body {
   width: 100%;
   height: 100%;
   margin: auto;
-  border: 2px solid rgba(0, 0, 0, 0);
+  border: 3px solid rgba(0, 0, 0, 0);
   transition: .4s;
 }
 .button:hover:after {
@@ -30,3 +31,5 @@ body {
   width: calc(100% - 10px);
   height: calc(100% + 10px);
 }
+
+h1{}
