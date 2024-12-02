@@ -41,7 +41,6 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 #logo {
@@ -61,12 +60,6 @@ hr {
     position: sticky;
   }
 
-  details{
-    font-size: 1.3rem;
-    color: #000000;  
-    
-  }
-
 footer{
   text-align: center;
   position: absolute;
@@ -80,9 +73,8 @@ footer{
 #questions{
   display:block;
   justify-content: center;
-  justify-content: center;
   align-items: center;
   margin: 50px;
   border-color: #b97b08;
-
+  
 }
