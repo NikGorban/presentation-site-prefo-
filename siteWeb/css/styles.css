@@ -1,4 +1,7 @@
 body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   background: #94650156;
   background-image: url(https://kartinki.pics/uploads/posts/2022-12/1669916337_kartinkin-net-p-tekstura-buka-instagram-17.jpg);
 }
@@ -50,19 +53,25 @@ h1{
   font-size: 3rem;
   margin-left: 25px;
   margin-right: 50px;
+  transition: text-shadow 0.3s ease;
+}
+#logo:hover{
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 hr {
   border-color: #b97b08;
   }
 
-  nav{
-    position: sticky;
-  }
+nav{
+  position: sticky;
+}
 
 footer{
   text-align: center;
-  position: absolute;
+  position: relative;
+ 
+  
   bottom: 0;
   left: 0;
   right: 0;
@@ -70,11 +79,41 @@ footer{
   font-size: 1.5rem;
 }
 
-#questions{
-  display:block;
+.container{
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px;
-  border-color: #b97b08;
-  
+  margin-top: auto;
+  font-size: 25px;  
+}
+
+.block{
+  background-color: rgba(0, 0, 0, 6%);
+  text-align: left;
+}
+
+details{
+  transition: 0.3s ease;
+  line-height: 1.8;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+details[open] summary{
+  animation: expand 0.5s ease-out;
+}
+
+@keyframes expand{
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}
+
+summary{
+  font-size: 2rem;
 }
