@@ -44,6 +44,7 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 #logo {
@@ -65,13 +66,12 @@ hr {
 
 nav{
   position: sticky;
+  margin-bottom: 50px;
 }
 
 footer{
   text-align: center;
-  position: relative;
- 
-  
+  position: relative;  
   bottom: 0;
   left: 0;
   right: 0;
@@ -94,9 +94,9 @@ footer{
 
 details{
   transition: 0.3s ease;
-  line-height: 1.8;
+  line-height: 0;
   overflow: hidden;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 details[open] summary{
@@ -115,5 +115,6 @@ details[open] summary{
 }
 
 summary{
+  line-height: 1.5;
   font-size: 2rem;
 }
