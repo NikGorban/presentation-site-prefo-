@@ -17,7 +17,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   transition: 0.4s;
-  }
+}
 
 .button:after {
   content: "";
@@ -56,13 +56,14 @@ h1{
   margin-right: 50px;
   transition: text-shadow 0.3s ease;
 }
+
 #logo:hover{
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 hr {
   border-color: #b97b08;
-  }
+}
 
 nav{
   position: sticky;
@@ -167,7 +168,7 @@ summary{
 .eye {
   width: 25px;
   height: 23px;
-  background: #fff;
+  background: #ffffff;
   border: 2px solid #000;
   border-radius: 50%;
   position: relative;
@@ -182,13 +183,13 @@ summary{
   position: absolute;
   top: 35%;
   left: 35%;
-  transition: transform 0.1s;
+  transition: transform 0.2s;
 }
 
 .lid {
   width: 100%;
   height: 2px;
-  background: rgb(71, 70, 70);
+  background: rgb(48, 46, 46);
   position: absolute;
   top: 50%;
   left: 0;

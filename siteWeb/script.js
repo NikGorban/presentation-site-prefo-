@@ -19,13 +19,13 @@ const openEyes = () => {
 document.addEventListener('mousemove', (event) => {
     const rects = Array.from(eyes).map(eye => eye.getBoundingClientRect());
     const centers = rects.map(rect => ({
-        x: rect.left + rect.width / 2,
-        y: rect.top + rect.height + 130 / 2
+        x: rect.left + (rect.width + 70) / 2,
+        y: rect.top + (rect.height + 65) / 2
     }));
     const distances = centers.map(center => Math.hypot(event.clientX - center.x, event.clientY - center.y));
     const minDistance = Math.min(...distances);
 
-    if (minDistance < 200 || event.clientX < 0 || event.clientY < 0 || event.clientX > window.innerWidth || event.clientY > window.innerHeight) {
+    if (minDistance < 150 || event.clientX < 10 || event.clientY < 10 || event.clientX > window.innerWidth || event.clientY > window.innerHeight) {
         closeEyes();
     } else {
         openEyes();
