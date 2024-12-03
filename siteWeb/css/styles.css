@@ -132,15 +132,14 @@ summary{
 }
 
 .text div{
-  font-size: 24px;
+  font-size: 30px;
+  line-height: 40px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   justify-content: center;
   align-items: center;
 }
 
-
-
-/*    *--*       */
+/*    *--*  JS     */
 
 .container {
   position: relative;
