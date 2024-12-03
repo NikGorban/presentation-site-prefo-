@@ -25,7 +25,7 @@ document.addEventListener('mousemove', (event) => {
     const distances = centers.map(center => Math.hypot(event.clientX - center.x, event.clientY - center.y));
     const minDistance = Math.min(...distances);
 
-    if (minDistance < 150 || event.clientX < 10 || event.clientY < 10 || event.clientX > window.innerWidth || event.clientY > window.innerHeight) {
+    if (minDistance < 150 || event.clientX < 10 || event.clientY < 10) {
         closeEyes();
     } else {
         openEyes();
