@@ -16,7 +16,7 @@ body {
   color: #000000;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
-  transition: 0.4s;
+  transition: 0.4s;  
 }
 
 .button:after {
@@ -33,11 +33,16 @@ body {
   transition: .4s;
 }
 
+.button:hover{
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: text-shadow 0.3s ease;
+}
+
 .button:hover:after {
   border-color: #524307;
   width: calc(100% - 10px);
   height: calc(100% + 10px);
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); 
 }
 
 h1{
@@ -78,6 +83,8 @@ footer{
   right: 0;
   padding: 0.2rem;
   font-size: 1.5rem;
+  margin-top: auto;
+
 }
 
 .container{
@@ -128,14 +135,13 @@ summary{
   justify-content: center;
   align-items: center;
   margin-left: auto;
-  margin-right: auto;
-  
+  margin-right: auto;  
 }
 
 .text div{
   font-size: 30px;
   line-height: 40px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  /*text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);*/
   justify-content: center;
   align-items: center;
 }
@@ -144,17 +150,14 @@ summary{
 
 .container {
   position: relative;
-  justify-content: flex-end;
-  
+  justify-content: flex-end;  
 } 
-
 
 .ink {
   display: block;
   width: 15%;
   height: auto;
   justify-content: flex-end;
-  
 }
 
 .eyes {
