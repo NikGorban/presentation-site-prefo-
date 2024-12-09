@@ -104,9 +104,30 @@ footer{
   float: left;
   margin-left: 150px;
   margin: right 10px;
-  width: 300px;
+  width: 320px;
   height: auto;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
 }
+
+.images{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.images img{
+  width: calc(33% - 10px);
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  margin: 20px auto;
+}
+
+.images img:nth-child(4), 
+.images img:nth-child(5){
+  width: calc(50% - 10px);
+}
+
 
 .container{
   display: flex;
@@ -174,9 +195,7 @@ summary{
   align-items: center;
 }
 
-img {
-  
-}
+
 
 /*    *--*  JS     */
 
