@@ -87,8 +87,14 @@ footer{
   left: 0;
   right: 0;
   padding: 0.2rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-top: auto;
+  font-family: "Cookie", cursive;
+  transition: text-shadow 0.3s ease;
+}
+
+footer:hover{
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .foot{
@@ -98,8 +104,14 @@ footer{
   left: 0;
   right: 0;
   padding: 0.2rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
+  font-family: "Cookie", cursive;
   margin-top: auto;
+  transition: text-shadow 0.3s ease;
+}
+
+.foot:hover{
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .left-image{
