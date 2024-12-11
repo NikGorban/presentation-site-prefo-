@@ -54,16 +54,30 @@ h1{
 }
 
 .bienvenue{
-margin-left: 100px;
-width: 30%;
+  display:inline-block;
+  margin-left: 200px;
+  
+  width: 75%;
+  align-items: center;
 }
 
 .bienvenue_text{
   display: flex;
-  justify-content:baseline;
-  align-items: center;
+  text-align: justify;
+  
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
+  margin-top: 75px;
+  margin-right: 250px;
+}
+
+#pc_png{
+  border: none;
+  box-shadow: none;
+  position:relative;
+  margin-top: 0; 
+  margin-left: 150px; 
+  float: right;
 }
 
 #link{
