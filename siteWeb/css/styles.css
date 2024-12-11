@@ -1,13 +1,12 @@
-body {
+body{
   display: flex;
   flex-direction: column;
   margin: 0;
   background: #b9b9df;
-  background-image: url(../104038.jpg);
-  
+  background-image: url(../104038.jpg);  
 }
 
-.button {
+.button{
   text-decoration: none;
   display: inline-block;
   margin: 10px 20px;
@@ -20,7 +19,7 @@ body {
   transition: 0.4s;  
 }
 
-.button:after {
+.button:after{
   content: "";
   position: absolute;
   top: 0;
@@ -39,7 +38,7 @@ body {
   transition: text-shadow 0.3s ease;
 }
 
-.button:hover:after {
+.button:hover:after{
   border-color: rgba(83, 83, 83, 0.96);
   width: calc(100% - 10px);
   height: calc(100% + 10px);
@@ -54,11 +53,24 @@ h1{
   font-size: 2.2rem;
 }
 
+.bienvenue{
+margin-left: 100px;
+width: 30%;
+}
+
+.bienvenue_text{
+  display: flex;
+  justify-content:baseline;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+}
+
 #link{
   text-decoration: none;
 }
 
-#logo {
+#logo{
   font-family: "Cookie", cursive;
   font-weight: 400;
   font-style: normal;
@@ -72,7 +84,7 @@ h1{
   text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-hr {
+hr{
   border-color: #454545;
 }
 
@@ -175,8 +187,7 @@ li{
   overflow: visible;
   padding: auto auto 10px auto;
   margin: bottom 1px; 
-  color: #1e1304;
-  
+  color: #1e1304;  
 }
 
 ul p{
