@@ -55,16 +55,14 @@ h1{
 
 .bienvenue{
   display:inline-block;
-  margin-left: 200px;
-  
+  margin-left: 200px;  
   width: 75%;
   align-items: center;
 }
 
 .bienvenue_text{
   display: flex;
-  text-align: justify;
-  
+  text-align: justify;  
   font-family: 'Montserrat', sans-serif;
   font-size: 1.8rem;
   margin-top: 75px;
